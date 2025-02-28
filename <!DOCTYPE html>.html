@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing & Product Manager Portfolio - Dubai</title>
+    
+    <!-- Google Analytics GA4 Setup -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #0070f3;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 5px;
+            background-color: #0070f3;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 20px;
+        }
+        
+        .nav-links a {
+            color: white;
+        }
+        
+        .hero {
+            padding: 100px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .skills {
+            background-color: white;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .skill-card h3 {
+            margin-bottom: 15px;
+        }
+        
+        .skill-items {
+            text-align: left;
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .skill-items li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .skill-items li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #0070f3;
+        }
+        
+        .analytics {
+            background-color: #f8f9fa;
+        }
+        
+        .analytics-container {
+            background-color: white;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .metric-card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .metric-card-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0070f3;
+            margin-bottom: 10px;
+        }
+        
+        .dubai {
+            background-color: #333;
+            color: white;
+        }
+        
+        .dubai-reasons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .dubai-reason {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            padding: 20px;
+        }
+        
+        .dubai-reason h3 {
+            margin-bottom: 15px;
+        }
+        
+        .contact {
+            background-color: #f8f9fa;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        textarea.form-control {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links li {
+            margin: 0 15px;
+        }
+        
+        .footer-links a {
+            color: white;
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Marketing Portfolio</a>
+                <ul class="nav-links">
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#analytics">Analytics</a></li>
+                    <li><a href="#dubai">Dubai Focus</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Marketing & Product Manager for Dubai</h1>
+            <p>Data-driven marketing strategist with expertise in Google Analytics, ready to bring value to Dubai's innovative market.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Marketing & Analytics Skills</h2>
+                <p>Comprehensive capabilities for data-driven decision making and marketing strategy development.</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Data Analytics</h3>
+                    <p>Collecting, analyzing, and deriving insights from user behavior data using Google Analytics.</p>
+                    <ul class="skill-items">
+                        <li>Google Analytics 4 setup and management</li>
+                        <li>User behavior analysis and funnel optimization</li>
+                        <li>A/B testing design and implementation</li>
+                        <li>Data processing with Excel and SQL</li>
+                        <li>Dashboard creation and data visualization</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Digital Marketing</h3>
+                    <p>Creating and executing comprehensive digital marketing strategies across multiple channels.</p>
+                    <ul class="skill-items">
+                        <li>Search Engine Optimization (SEO)</li>
+                        <li>Pay-Per-Click (PPC) advertising</li>
+                        <li>Social media marketing and content strategy</li>
+                        <li>Email marketing campaigns and automation</li>
+                        <li>Marketing channel performance analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Product Management</h3>
+                    <p>Leading product development from conceptualization to market launch based on user data.</p>
+                    <ul class="skill-items">
+                        <li>Product roadmap development</li>
+                        <li>User story creation and prioritization</li>
+                        <li>Cross-functional team collaboration</li>
+                        <li>Product market fit analysis</li>
+                        <li>Feature adoption and retention metrics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="analytics" class="analytics">
+        <div class="container">
+            <div class="section-title">
+                <h2>Analytics Portfolio</h2>
+                <p>Examples of data-driven insights and metrics from previous projects.</p>
+            </div>
+            <div class="analytics-container">
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-card-value">158%</div>
+                        <div class="metric-card-label">Conversion Rate Increase</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-card-value">45%</div>
+                        <div class="metric-card-label">Cost Per Acquisition Reduction</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-card-value">87%</div>
+                        <div class="metric-card-label">User Engagement Growth</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-card-value">$2.4M</div>
+                        <div class="metric-card-label">Revenue Generated</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dubai Focus Section -->
+    <section id="dubai" class="dubai">
+        <div class="container">
+            <div class="section-title">
+                <h2>Dubai Market Focus</h2>
+                <p>Why I'm particularly suited for Dubai's innovative business environment.</p>
+            </div>
+            <div class="dubai-reasons">
+                <div class="dubai-reason">
+                    <h3>Market Knowledge</h3>
+                    <p>Extensive research on Dubai's digital market landscape and consumer behaviors across various sectors including technology, real estate, and retail.</p>
+                </div>
+                <div class="dubai-reason">
+                    <h3>Cultural Awareness</h3>
+                    <p>Understanding of the unique blend of international business practices and local cultural considerations that shape Dubai's business environment.</p>
+                </div>
+                <div class="dubai-reason">
+                    <h3>Growth Mindset</h3>
+                    <p>Aligned with Dubai's vision for innovation and technological advancement, bringing a forward-thinking approach to marketing strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Interested in discussing how I can help your Dubai-based business? Get in touch!</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm currently available for marketing and product management roles in Dubai. Feel free to reach out to discuss potential opportunities.</p>
+                    <p>Email: your.email@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Available for: Full-time positions, Consultancy</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#dubai">Dubai Focus</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="copyright">© 2025 Marketing Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
